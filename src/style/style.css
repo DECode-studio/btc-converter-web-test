@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+body {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Container settings */
+.career-list-container {
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  white-space: nowrap;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  gap: 1rem; /* Add gap between cards */
+}
+
+/* Style for the content inside */
+.career-list-content {
+  display: flex;
+  gap: 1rem; /* Add gap between cards */
+}
