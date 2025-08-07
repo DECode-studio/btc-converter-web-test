@@ -3,10 +3,10 @@ const idrMoney = new Intl.NumberFormat("id-ID", {
   maximumFractionDigits: 0,
 });
 
-const decMoney = new Intl.NumberFormat("en-US", {
-  style: "decimal",
-  maximumFractionDigits: 0,
-});
+// const decMoney = new Intl.NumberFormat("en-US", {
+//   style: "decimal",
+//   maximumFractionDigits: 0,
+// });
 
 const idrMoneyCompact = new Intl.NumberFormat("id-ID", {
   style: "currency",
